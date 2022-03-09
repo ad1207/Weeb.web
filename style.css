@@ -56,8 +56,9 @@ body{
 
 .search{
     display: inline;
-    margin-right: auto;
-    margin-left: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     height: 50px;
     padding-bottom: 7px;
 }
@@ -79,9 +80,13 @@ body{
     width: 225px;
     margin-bottom: 10px;
 }
+.res:hover img{
+    box-shadow: 0px 0px 10px gray;
+}
 
 .result{
     display: flex;
+    margin-top: 50px;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
